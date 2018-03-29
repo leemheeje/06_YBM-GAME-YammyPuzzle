@@ -1,0 +1,482 @@
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/NanumSquare.eot');
+    src: url('../font/NanumSquare.eot?#iefix') format('embedded-opentype'),
+    url('../font/NanumSquare.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'NanumSquare';
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    list-style: none
+}
+
+button {
+    border: none;
+    outline: none;
+    font-size: 0;
+    cursor: pointer;
+}
+
+#game_13_wrap {
+    position: relative;
+    width: 1280px;
+    height: 680px;
+    background: url(../images/background.png) 0 0 no-repeat;
+    padding-top: 50px;
+}
+
+#game_13_wrap .game_point {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 17px;
+    color: #fff;
+    padding: 5px 8px 6px 36px;
+    background: url(../images/point.png) 0 0 no-repeat;
+}
+
+#game_13_wrap #game_13_area {
+    position: relative;
+    width: 1248px;
+    height: 654px;
+    margin: 0px auto;
+}
+
+#game_13_wrap #game_13_area::after {
+    display: block;
+    content: " ";
+    clear: both;
+}
+
+#ybm_game_13_pop_bg {
+    position: absolute;
+    top: 50px;
+    left: 16px;
+    width: 1249px;
+    height: 654px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+#ybm_game_13_pop_bg .how_to_play {
+    position: relative;
+    width: 950px;
+    height: 588px;
+    background: url(../images/howToPlay.png) 0 0 no-repeat;
+    position: absolute;
+    top: 37px;
+    left: 150px;
+    z-index: 13;
+}
+
+#ybm_game_13_pop_bg .how_to_play>span {
+    font-size: 0;
+}
+
+#ybm_game_13_pop_bg .how_to_play>ul {
+    margin: 206px 0 0 45px;
+}
+
+#ybm_game_13_pop_bg .how_to_play>ul li {
+    font-size: 19px;
+    color: #000;
+    margin: 10px;
+}
+
+#ybm_game_13_pop_bg .how_to_play>ul li::before {
+    display: inline-block;
+    content: " ";
+    width: 9px;
+    height: 9px;
+    background: #666;
+    margin: 0 10px 2px 0;
+    border-radius: 5px;
+}
+
+#ybm_game_13_pop_bg .how_to_play>ul li.pink {
+    color: #ed1e79;
+    font-weight: bold
+}
+
+#ybm_game_13_pop_bg .how_to_play>img {
+    margin: 5px 0 0 70px;
+}
+
+#ybm_game_13_pop_bg .how_to_play .game_start_btn {
+    position: absolute;
+    bottom: 78px;
+    right: 75px;
+    width: 183px;
+    height: 116px;
+    background: url(../images/start_btn.png) 0 -124px no-repeat;
+}
+
+#ybm_game_13_pop_bg .how_to_play .game_start_btn:hover {
+    background: url(../images/start_btn.png) 0 0 no-repeat;
+}
+
+#ybm_game_13_pop_bg .next_mission {
+    position: absolute;
+    top: 155px;
+    left: 400px;
+    width: 480px;
+    height: 342px;
+    background: url(../images/next.png) 0 0 no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*팝업 게임결과*/
+
+#game_13_next p {
+    font-family: 'NanumSquare';
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    font-size: 24px;
+    color: #5e5e5e;
+    padding-left: 90px;
+    margin: 240px 0px 0px 258px;
+    background: url(../images/img_coin.png) 0 8px no-repeat;
+}
+
+#game_13_next p em {
+    font-size: 32px;
+    font-style: normal;
+    color: #000;
+    vertical-align: -3px;
+    font-weight: bold;
+}
+
+#game_13_next button.naxt_btn {
+    position: absolute;
+    top: 396px;
+    right: 74px;
+    border: none;
+    cursor: pointer;
+    width: 183px;
+    height: 116px;
+    font-size: 0;
+    background: url(../images/next_btn.png) 0 -120px no-repeat;
+}
+
+#game_13_next button.naxt_btn:hover {
+    background: url(../images/next_btn.png) 0 0px no-repeat;
+}
+
+
+
+
+
+
+
+
+
+/* 게임 영역*/
+
+#game_13_area #gain_score {
+    position: absolute;
+    font-size: 70px;
+    top: 65px;
+    left: 180px;
+    width: 170px;
+    font-weight: bold;
+    text-align: right;
+}
+
+#game_13_area #gain_score span {
+    margin-left: 15px;
+    font-size: 40px;
+    vertical-align: middle;
+    color: #996e03;
+}
+
+
+
+
+
+
+
+/*스테이지*/
+
+#game_13_area .stage {
+    position: relative;
+    width: 117px;
+    display: inline-block;
+    height: 316px;
+    z-index: 1;
+    background: url(../images/stage.png) 0 0 no-repeat;
+    left: 465px;
+}
+
+#game_13_area .stage.stage2 {
+    background: url(../images/stage.png) -117px 0 no-repeat;
+}
+
+#game_13_area .stage.stage3 {
+    background: url(../images/stage.png) -234px 0 no-repeat;
+}
+
+
+
+
+
+
+
+/*타이머*/
+
+.timer {
+    position: absolute;
+    height: 57px;
+    width: 562px;
+    background: url(../images/timer_bg.png) no-repeat;
+    bottom: 10px;
+    left: 15px;
+    z-index: 3;
+}
+
+.timer #timer_gauge {
+    position: absolute;
+    height: 15px;
+    width: 480px;
+    background: url(../images/timer_gauge.png);
+    background-repeat: repeat-x;
+    font-size: 0;
+    bottom: 19px;
+    z-index: 4;
+    left: 67px;
+}
+
+#game_13_next {
+    position: absolute;
+    width: 950px;
+    height: 570px;
+    background: url(../images/gameover.png) 0 0 no-repeat;
+    top: 53px;
+    left: 150px;
+    z-index: 13;
+}
+
+
+
+
+/*캐릭터*/
+
+#character {
+    position: absolute;
+    background: red;
+    width: 596px;
+    bottom: 0;
+    z-index: 2;
+    height: 553px;
+}
+
+#character.first_face {
+    background: url(../images/first_face.png) no-repeat;
+}
+
+#character.sec_face {
+    background: url(../images/sec_face.png) no-repeat;
+}
+
+
+.cpl_num {
+    display: none;
+    width: 52px;
+    height: 52px;
+    line-height: 53px;
+    text-align: center;
+    color: #ffff9a;
+    position: absolute;
+    left: 323px;
+    top: 86px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+
+/*블럭영역*/
+
+.block_wrap {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 27px;
+    right: 25px;
+}
+.food_wrap{
+      position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 0;
+    right: 0;
+}
+.food {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    /*height: 80px;*/
+    float: left;
+    margin: 0;
+    z-index: 5;
+    /*margin: 10px 10px;*/
+    /*background: beige;*/
+}
+/*.food.blue{
+    background: url(../images/food.png) no-repeat;
+    background-position: -10px  -10px;
+}
+.food.green{
+    background: url(../images/food.png) no-repeat;
+    background-position: -110px  -10px;
+}
+.food.brown{
+    background: url(../images/food.png) no-repeat;
+    background-position: -10px  -110px;
+}
+.food.purple{
+    background: url(../images/food.png) no-repeat;
+    background-position: -110px  -110px;
+}
+.food.pink{
+    background: url(../images/food.png) no-repeat;
+    background-position: -10px  -210px;
+}
+.food.skyblue{
+    background: url(../images/food.png) no-repeat;
+    background-position: -110px  -210px;
+}
+.food.mint{
+    background: url(../images/food.png) no-repeat;
+    background-position: -10px -310px;
+}
+.food.yellow{
+    background: url(../images/food.png) no-repeat;
+    background-position: -110px  -310px;
+}
+.food.hotpink{
+    background: url(../images/food.png) no-repeat;
+    background-position: -10px -410px;
+}*/
+
+.food.blue{
+    background: url(../images/food.png) no-repeat;
+    background-position: 0  0px;
+}
+.food.green{
+    background: url(../images/food.png) no-repeat;
+    background-position: -100px  0px;
+}
+.food.brown{
+    background: url(../images/food.png) no-repeat;
+    background-position: 0  -100px;
+}
+.food.purple{
+    background: url(../images/food.png) no-repeat;
+    background-position: -100px  -100px;
+}
+.food.pink{
+    background: url(../images/food.png) no-repeat;
+    background-position: 0  -200px;
+}
+.food.skyblue{
+    background: url(../images/food.png) no-repeat;
+    background-position: -100px  -200px;
+}
+.food.mint{
+    background: url(../images/food.png) no-repeat;
+    background-position: 0px  -300px;
+}
+.food.yellow{
+    background: url(../images/food.png) no-repeat;
+    background-position: -100px  -300px;
+}
+.food.hotpink{
+    background: url(../images/food.png) no-repeat;
+    background-position: 0px  -400px;
+}
+
+/*
+.food_bg {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 0;
+    background: transparent;
+}*/
+.food.in.blue{
+    background: url(../images/food_bg.png) no-repeat;
+    background-position: 0  0px;
+}
+.food.in.green{
+    background: url(../images/food_bg.png) no-repeat;
+    background-position: -100px  0px;
+}
+.food.in.brown{
+    background: url(../images/food_bg.png) no-repeat;
+    background-position: 0  -100px;
+}
+.food.in.purple{
+    background: url(../images/food_bg.png) no-repeat;
+    background-position: -100px  -100px;
+}
+.food.in.pink{
+    background: url(../images/food_bg.png) no-repeat;
+    background-position: 0  -200px;
+}
+.food.in.skyblue{
+    background: url(../images/food_bg.png) no-repeat;
+    background-position: -100px  -200px;
+}
+.food.in.mint{
+    background: url(../images/food_bg.png) no-repeat;
+    background-position: 0px  -300px;
+}
+.food.in.yellow{
+    background: url(../images/food_bg.png) no-repeat;
+    background-position: -100px  -300px;
+}
+.food.in.hotpink{
+    background: url(../images/food_bg.png) no-repeat;
+    background-position: 0px  -400px;
+}
+
+
+#ios_audio_button {
+    width: 82px;
+    height: 78px;
+    background: url(../images/img_vol.png) no-repeat;
+    background-position: -82px 0px;
+    position: absolute;
+    border: 0;
+    top: 85px;
+    left: 35px;
+    font-size: 0;
+    z-index: 2;
+}
+
+#ios_audio_button.off {
+    background-position: 0px 0px;
+}
